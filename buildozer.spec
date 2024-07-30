@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,opencv-python
+requirements = python3,kivy,opencv
 orientation = portrait
 
 [buildozer]
@@ -19,8 +19,8 @@ fullscreen = 0
 android.permissions = android.permission.CAMERA,android.permission.INTERNET
 android.api = 31
 android.minapi = 21
-android.sdk = 30
-android.ndk = 23b
+android.sdk = 31
+android.ndk = 25b
 android.ndk_api = 21
 android.private_storage = True
 android.entrypoint = org.kivy.android.PythonActivity
