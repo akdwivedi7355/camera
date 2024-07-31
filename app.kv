@@ -1,47 +1,11 @@
-<CameraApp>:
-    BoxLayout:
-        orientation: 'vertical'
-        
-        BoxLayout:
-            size_hint_y: 0.9
+BoxLayout:
+    orientation: 'vertical'
 
-            Image:
-                id: camera_feed
-                # Placeholder for the camera feed
-                allow_stretch: True
-                keep_ratio: False
+    Label:
+        id: lbl
+        text: 'Hello, Kivy!'
+        font_size: '24sp'
 
-        BoxLayout:
-            size_hint_y: 0.1
-            orientation: 'vertical'
-            padding: [10, 10, 10, 10]
-
-            Button:
-                id: mark_attendance_button
-                text: "Mark Attendance"
-                background_color: (0.2, 0.6, 0.3, 1)
-                size_hint_y: None
-                height: 50
-                font_size: 20
-                padding: [10, 10]
-                on_press: root.mark_attendance()
-
-            Button:
-                id: record_button
-                text: "Record"
-                background_color: (0.2, 0.6, 0.8, 1)
-                size_hint_y: None
-                height: 50
-                font_size: 20
-                padding: [10, 10]
-                on_press: root.record()
-
-            Button:
-                id: register_button
-                text: "Register"
-                background_color: (0.8, 0.6, 0.2, 1)
-                size_hint_y: None
-                height: 50
-                font_size: 20
-                padding: [10, 10]
-                on_press: root.register()
+    Button:
+        text: 'Change Text'
+        on_press: lbl.text = 'Text Changed!'
